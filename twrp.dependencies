@@ -1,0 +1,8 @@
+[
+    {
+	"remote": "github",
+	"repository": "YudhoPatrianto/android_kernel_xiaomi_fire",
+	"target_path": "kernel/xiaomi/fire",
+	"revision": "fire-t-oss"
+    }
+]
