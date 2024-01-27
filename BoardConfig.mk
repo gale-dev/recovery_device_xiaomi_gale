@@ -151,3 +151,6 @@ TWRP_INCLUDE_LOGCAT := true
 
 # Handle /data/media
 RECOVERY_SDCARD_ON_DATA := true
+
+# Format Use MKE2FS
+TARGET_USES_MKE2FS := true
