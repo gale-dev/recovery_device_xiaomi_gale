@@ -143,11 +143,8 @@ TW_HAS_MTP := true
 TW_USB_STORAGE := true
 
 # LOGCAT
-TARGET_USES_LOGD := true
+TARGET_USES_LOGD := true    
 TWRP_INCLUDE_LOGCAT := true
-
-# Handle /data/media
-RECOVERY_SDCARD_ON_DATA := true
 
 # Format Use MKE2FS
 TARGET_USES_MKE2FS := true
