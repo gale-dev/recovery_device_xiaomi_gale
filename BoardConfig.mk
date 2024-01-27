@@ -136,3 +136,7 @@ TW_HAS_MTP := true
 
 # USB OTG
 TW_USB_STORAGE := true
+
+# LOGCAT
+TARGET_USES_LOGD := true
+TWRP_INCLUDE_LOGCAT := true
