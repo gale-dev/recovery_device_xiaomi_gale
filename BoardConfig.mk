@@ -10,6 +10,9 @@ DEVICE_PATH := device/xiaomi/fire
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
+# System As Root
+BOARD_SUPPRESS_SECURE_ERASE := true
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
