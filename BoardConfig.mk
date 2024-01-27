@@ -148,3 +148,14 @@ TWRP_INCLUDE_LOGCAT := true
 
 # Format Use MKE2FS
 TARGET_USES_MKE2FS := true
+
+# FastbootD
+TW_INCLUDE_FASTBOOTD := true
+
+# Fuse
+TW_INCLUDE_NTFS_3G    := true
+TW_INCLUDE_FUSE_EXFAT := true
+TW_INCLUDE_FUSE_NTFS  := true
+
+# Metadata
+BOARD_USES_METADATA_PARTITION := true
