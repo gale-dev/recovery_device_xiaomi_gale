@@ -155,3 +155,6 @@ TW_INCLUDE_FUSE_NTFS  := true
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
+
+# Props
+TARGET_SYSTEM_PROP := "$(DEVICE_PATH)/system.prop"
