@@ -102,10 +102,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
-# Security patch level
-PLATFORM_SECURITY_PATCH := 2127-12-31
-VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
-
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
