@@ -130,9 +130,6 @@ TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
 
-# Touchscreen
-TW_LOAD_VENDOR_MODULES := "focaltech_8725_2_fw.bin focaltech_8725_fw.bin focaltech_ft8720_hx.ini focaltech_ft8725_2_hx.ini focaltech_ft8725_hx.ini focaltech_ts_fw_.bin novatek_ts_fw.bin novatek_ts_mp.bin"
-
 # USB Configuration
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
