@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
     bootctrl.mt6768 \
     bootctrl.mt6768.recovery
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Update Engine & Update Verifier 
 PRODUCT_PACKAGES += \
     update_engine \
