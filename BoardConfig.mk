@@ -165,5 +165,8 @@ TW_PREPARE_DATA_MEDIA_EARLY := true
 # Treble
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
 
+# DM Verity
+PB_DISABLE_DEFAULT_DM_VERITY := true
+
 # Maintainer
 PB_MAINTAINER := YudhoPatrianto
