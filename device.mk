@@ -41,8 +41,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     otapreopt_script \
     cppreopts.sh \
-
-PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
