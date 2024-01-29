@@ -187,6 +187,3 @@ PB_DISABLE_DEFAULT_DM_VERITY := true
 
 # Maintainer Flags
 MAINTAINER := "YudhoPatrianto"
-
-#Fsycrpt
-TW_USE_FSCRYPT_POLICY := 
