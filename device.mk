@@ -10,6 +10,10 @@ LOCAL_PATH := device/xiaomi/fire
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# A/B 
+PRODUCT_PACKAGES += \
+    otapreopt_script
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -29,18 +33,20 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl \
-    update_engine_client
 
 PRODUCT_PACKAGES += \
     bootctrl.mt6768 \
     bootctrl.mt6768.recovery
 
+# Update Engine & Update Verifier 
 PRODUCT_PACKAGES += \
-    otapreopt_script \
-    cppreopts.sh \
     update_engine \
-    update_verifier \
-    update_engine_sideload
+    update_engine_sideload\
+    update_verifier
+
+# Update Engine
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 # Fastbootd
 PRODUCT_PACKAGES += \
