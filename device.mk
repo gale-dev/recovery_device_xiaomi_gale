@@ -32,7 +32,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 PRODUCT_PACKAGES_DEBUG += \
-    bootctrl \
+    bootctrl 
 
 PRODUCT_PACKAGES += \
     bootctrl.mt6768 \
