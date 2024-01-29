@@ -168,5 +168,8 @@ PB_DISABLE_DEFAULT_TREBLE_COMP := true
 # DM Verity
 PB_DISABLE_DEFAULT_DM_VERITY := true
 
+# Unmount Vendor
+TW_USES_VENDOR_LIBS := true
+
 # Maintainer
 PB_MAINTAINER := YudhoPatrianto
