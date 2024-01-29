@@ -185,8 +185,8 @@ PB_DISABLE_DEFAULT_TREBLE_COMP := true
 # DM Verity
 PB_DISABLE_DEFAULT_DM_VERITY := true
 
-# Maintainer
-PB_MAINTAINER := YudhoPatrianto
+# Maintainer Flags
+MAINTAINER := YudhoPatrianto
 
 #Fsycrpt
 TW_USE_FSCRYPT_POLICY := 
