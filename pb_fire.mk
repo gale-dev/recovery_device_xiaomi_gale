@@ -15,9 +15,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit some common PBRP stuff.
 $(call inherit-product, vendor/pb/config/common.mk)
 
-# Virtual A/B
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
-
 # Inherit from fire device
 $(call inherit-product, device/xiaomi/fire/device.mk)
 
