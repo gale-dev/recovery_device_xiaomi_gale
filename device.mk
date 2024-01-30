@@ -10,6 +10,9 @@ LOCAL_PATH := device/xiaomi/fire
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := fire
+
 # A/B 
 PRODUCT_PACKAGES += \
     otapreopt_script
@@ -24,9 +27,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
 # Virtual A/B
 ENABLE_VIRTUAL_AB := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := fire
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
