@@ -185,4 +185,4 @@ PB_DISABLE_DEFAULT_TREBLE_COMP := true
 PB_DISABLE_DEFAULT_DM_VERITY := true
 
 # Maintainer Flags
-MAINTAINER := "YudhoPatrianto"
+MTAINER := YudhoPatrianto
