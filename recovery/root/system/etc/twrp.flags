@@ -15,7 +15,7 @@
 /dtbo               emmc      /dev/block/by-name/dtbo	                   flags=slotselect;
 /otp                emmc      /dev/block/by-name/otp
 /vbmeta             emmc      /dev/block/by-name/vbmeta                    flags=slotselect;display="VBmeta";backup=1;
-/cust               ext4      /dev/block/bootdevice/by-name/cust           flags=display="Cust";
+/cust               ext4      /dev/block/by-name/cust                      flags=display="Cust";
 
 # Removable storage
 /sdcard1            auto       /dev/block/mmcblk1p1   /dev/block/mmcblk1   flags=display="MicroSD";storage;wipeingui;removable;fsflags="utf8"
