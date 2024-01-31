@@ -4,7 +4,6 @@ product                                  /product           ext4                
 
 
 /dev/block/by-name/md_udc       /metadata        ext4                noatime,nosuid,nodev,discard wait,check,formattable
-/dev/block/by-name/metadata     /metadata        ext4                noatime,nosuid,nodev,discard wait,check,formattable
 
 /dev/block/by-name/userdata     /data            f2fs                noatime,nosuid,nodev,discard,noflush_merge,reserve_root=134217,resgid=1065,inlinecrypt,fsync_mode=nobarrier wait,check,formattable,quota,latemount,resize,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption
 
