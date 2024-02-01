@@ -177,20 +177,6 @@ TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 TW_PREPARE_DATA_MEDIA_EARLY := true
 
-# Treble
-PB_DISABLE_DEFAULT_TREBLE_COMP := true
-
-# DM Verity
-PB_DISABLE_DEFAULT_DM_VERITY := true
-
-# Maintainer Flags
-MTAINER := YudhoPatrianto
-
 # Libresetprop & resetprop
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP := true
-
-# Exclude Flags
-TW_EXCLUDE_NANO := true
-TW_EXCLUDE_BASH := true
-TW_EXCLUDE_PYTHON := true
