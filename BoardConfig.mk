@@ -189,8 +189,3 @@ MTAINER := YudhoPatrianto
 # Libresetprop & resetprop
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP := true
-
-# Exclude Flags
-TW_EXCLUDE_NANO := true
-TW_EXCLUDE_BASH := true
-TW_EXCLUDE_PYTHON := true
