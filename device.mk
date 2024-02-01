@@ -13,9 +13,13 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Assert
 TARGET_OTA_ASSERT_DEVICE := fire,sky
 
-# A/B 
+# Update Engine & Update Verifier 
 PRODUCT_PACKAGES += \
-    otapreopt_script
+    otapreopt_script \
+    cppreopts.sh \
+    update_engine \
+    update_verifier \
+    update_engine_sideload
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -44,16 +48,6 @@ PRODUCT_PACKAGES += \
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Update Engine & Update Verifier 
-PRODUCT_PACKAGES += \
-    update_engine \
-    update_engine_sideload\
-    update_verifier
-
-# Update Engine
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
 
 # Fastbootd
 PRODUCT_PACKAGES += \
