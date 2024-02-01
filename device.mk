@@ -11,7 +11,7 @@ LOCAL_PATH := device/xiaomi/fire
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := fire,sky,mt6768
+TARGET_OTA_ASSERT_DEVICE := fire,sky
 
 # A/B 
 PRODUCT_PACKAGES += \
