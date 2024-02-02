@@ -40,7 +40,14 @@ service vendor.keymaster-4-1-beanpod /vendor/bin/hw/android.hardware.keymaster@4
     oneshot    
     disabled
     seclabel u:r:recovery:s0
-   
+
+on property:vendor.sys.listener.registered=true
+    start vendor.gatekeeper-1-0
+
+on property:hwservicemanager.ready=true
+    start vendor.keymaster-4-1-beanpod 
+    start vendor.gatekeeper-1-0
+
 on property:ro.crypto.state=unsupported
     stop teei_daemon
     stop vendor.keymaster-4-1-beanpod 
