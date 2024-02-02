@@ -38,12 +38,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
-# VNDK
-PRODUCT_TARGET_VNDK_VERSION := 33
-
-# API
-PRODUCT_SHIPPING_API_LEVEL := 32
-
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl 
 
