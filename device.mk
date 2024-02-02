@@ -10,10 +10,15 @@ LOCAL_PATH := device/xiaomi/fire
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# A/B 
+# Virtual A/B
+ENABLE_VIRTUAL_AB := true
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
+# Update Engine & Update Verifier 
 PRODUCT_PACKAGES += \
-    otapreopt_script \
-    cppreopts.sh
+    update_engine \
+    update_verifier \
+    update_engine_sideload
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -22,9 +27,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-# Virtual A/B
-ENABLE_VIRTUAL_AB := true
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+# A/B 
+PRODUCT_PACKAGES += \
+    otapreopt_script \
+    cppreopts.sh
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
@@ -42,12 +48,6 @@ PRODUCT_PACKAGES += \
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Update Engine & Update Verifier 
-PRODUCT_PACKAGES += \
-    update_engine \
-    update_engine_sideload\
-    update_verifier
 
 # Fastbootd
 PRODUCT_PACKAGES += \
