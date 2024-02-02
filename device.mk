@@ -12,7 +12,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # A/B 
 PRODUCT_PACKAGES += \
-    otapreopt_script
+    otapreopt_script \
+    cppreopts.sh
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
