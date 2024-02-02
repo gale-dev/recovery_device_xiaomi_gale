@@ -48,10 +48,6 @@ PRODUCT_PACKAGES += \
     update_engine_sideload\
     update_verifier
 
-# Update Engine
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
-
 # Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
