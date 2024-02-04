@@ -183,3 +183,6 @@ TW_PREPARE_DATA_MEDIA_EARLY := true
 # Libresetprop & resetprop
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP := true
+
+# Maintainer
+TW_DEVICE_VERSION := YudhoPatrianto
