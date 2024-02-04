@@ -10,9 +10,6 @@ LOCAL_PATH := device/xiaomi/fire
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := fire,sky
-
 # Update Engine & Update Verifier 
 PRODUCT_PACKAGES += \
     otapreopt_script \
