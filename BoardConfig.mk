@@ -192,3 +192,6 @@ MTAINER := YudhoPatrianto
 # Libresetprop & resetprop
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP := true
+
+# Handle /data/media
+RECOVERY_SDCARD_ON_DATA := true
