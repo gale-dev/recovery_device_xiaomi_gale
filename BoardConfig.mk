@@ -192,3 +192,6 @@ TW_INCLUDE_RESETPROP := true
 
 # Handle /data/media
 RECOVERY_SDCARD_ON_DATA := true
+
+# Prevent Installing PBRP Using fastboot
+TW_NO_FASTBOOT_BOOT := true
