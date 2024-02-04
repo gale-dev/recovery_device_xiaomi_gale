@@ -10,7 +10,7 @@
 /boot               emmc      /dev/block/by-name/boot                      flags=display="Boot";backup=1;flashimg=1;slotselect;
 /expdb              emmc      /dev/block/by-name/expdb
 /seccfg             emmc      /dev/block/by-name/seccfg   
-/tee                emmc      /dev/block/by-name/tee1                      flags=slotselect;            
+/tee                emmc      /dev/block/by-name/tee                       flags=slotselect;            
 /spmfw              emmc      /dev/block/by-name/spmfw                     flags=slotselect;      
 /dtbo               emmc      /dev/block/by-name/dtbo	                   flags=display="Dtbo";backup=1;flashimg=1;slotselect;
 /otp                emmc      /dev/block/by-name/otp
