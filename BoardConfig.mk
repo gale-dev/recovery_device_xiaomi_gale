@@ -192,3 +192,6 @@ TW_INCLUDE_RESETPROP := true
 
 # Handle /data/media
 RECOVERY_SDCARD_ON_DATA := true
+
+# Disable AVB2.0
+PB_DISABLE_DEFAULT_PATCH_AVB2 := true
