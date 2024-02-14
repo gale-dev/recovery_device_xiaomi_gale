@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/xiaomi/fire
+LOCAL_PATH := device/xiaomi/gale
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

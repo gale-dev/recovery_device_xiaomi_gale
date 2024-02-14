@@ -7,6 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),fire)
+ifeq ($(TARGET_DEVICE),gale)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

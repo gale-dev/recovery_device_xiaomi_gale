@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pb_fire.mk
+    $(LOCAL_DIR)/pb_gale.mk
 
 COMMON_LUNCH_CHOICES := \
-    pb_fire-eng
+    pb_gale-eng

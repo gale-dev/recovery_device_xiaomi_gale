@@ -12,5 +12,5 @@ ro.mediatek.platform=MT6768
 ro.hardware=mt6768
 
 # Board
-ro.product.device=fire
-ro.build.product=fire
+ro.product.device=gale
+ro.build.product=gale
