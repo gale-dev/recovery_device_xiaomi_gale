@@ -21,7 +21,6 @@ $(call inherit-product, device/xiaomi/gale/device.mk)
 PRODUCT_DEVICE := gale
 PRODUCT_NAME := pb_gale
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 13C/Poco C64
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
