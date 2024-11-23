@@ -28,12 +28,12 @@
         <transport arch="32+64">passthrough</transport>
         <fqname>@1.0::IMapper/ashmem</fqname>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" max-level="7">
         <name>android.system.net.netd</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::INetd/default</fqname>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" max-level="7">
         <name>android.system.wifi.keystore</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IKeystore/default</fqname>
