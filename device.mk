@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+PRODUCT_PACKAGES += \
+    create_pl_dev \
+    create_pl_dev.recovery
+
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
     libkeymaster4 \
