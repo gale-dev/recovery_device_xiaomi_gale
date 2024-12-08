@@ -8,11 +8,15 @@
 /system_root        auto      /dev/block/mapper/system                          flags=backup=1;display="System";logical;slotselect;
 /vendor             auto      /dev/block/mapper/vendor                          flags=backup=1;display="Vendor";logical;slotselect;
 /product            auto      /dev/block/mapper/product                         flags=backup=1;display="Product";logical;slotselect;
+/system_dlkm        auto      /dev/block/mapper/system_dlkm                     flags=backup=1;display="System_dlkm";logical;slotselect;
+/vendor_dlkm        auto      /dev/block/mapper/vendor_dlkm                     flags=backup=1;display="Vendor_dlkm";logical;slotselect;
 
 /system_image       emmc      /dev/block/mapper/system_a                        flags=display="System.img";flashimg=1
 /system_ext_image   emmc      /dev/block/mapper/system_ext_a                    flags=display="System_EXT.img";flashimg=1
 /vendor_image       emmc      /dev/block/mapper/vendor_a                        flags=display="Vendor.img";flashimg=1
 /product_image      emmc      /dev/block/mapper/product_a                       flags=display="Product.img";flashimg=1
+/system_dlkm        emmc      /dev/block/mapper/system_dlkm_a                   flags=display="System_DLKM.img";flashimg=1
+/vendor_dlkm        emmc      /dev/block/mapper/vendor_dlkm_a                   flags=display="Vendor_DLKM.img";flashimg=1
 
 /data               f2fs      /dev/block/by-name/userdata                       flags=fileencryption=aes-256-xts:aes-256-cts:v2,keydirectory=/metadata/vold/metadata_encryption
 /metadata           ext4      /dev/block/by-name/md_udc                         flags=display="Metadata";wipeduringfactoryreset

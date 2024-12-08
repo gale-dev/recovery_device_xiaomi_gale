@@ -57,6 +57,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl \
 
+# Kernel
+TWRP_REQUIRED_MODULES += \
+	miui_prebuilt
+
 # Health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
