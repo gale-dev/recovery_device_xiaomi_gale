@@ -201,6 +201,7 @@ TW_EXCLUDE_APEX := true
 TW_USE_TOOLBOX := true
 TW_INCLUDE_PYTHON := true
 RECOVERY_SDCARD_ON_DATA := true
+TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/prebuilt/$(PRODUCT_RELEASE_NAME)/modules/1.1)\")
 
 # Serialno
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
