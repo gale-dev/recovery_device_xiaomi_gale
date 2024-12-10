@@ -33,27 +33,27 @@ service vendor.keymaster-4-1-beanpod /vendor/bin/hw/android.hardware.keymaster@4
     disabled
     seclabel u:r:recovery:s0
 
-on property:vendor.sys.listener.registered=true
-    start vendor.keymaster-4-1-beanpod
+#on property:vendor.sys.listener.registered=true
+#    start vendor.keymaster-4-1-beanpod
 
-on property:hwservicemanager.ready=true
-    start vendor.keymaster-4-1-beanpod
-    start vendor.gatekeeper
+#on property:hwservicemanager.ready=true
+#    start vendor.keymaster-4-1-beanpod
+#    start vendor.gatekeeper
    
-on property:ro.crypto.state=unsupported
-    stop vendor.teei_daemon
-    stop vendor.keymaster-4-1-beanpod
-    stop vendor.gatekeeper
+#on property:ro.crypto.state=unsupported
+#    stop vendor.teei_daemon
+#    stop vendor.keymaster-4-1-beanpod
+#    stop vendor.gatekeeper
     
-on property:ro.crypto.state=unencrypted
-    stop vendor.teei_daemon
-    stop vendor.keymaster-4-1-beanpod
-    stop vendor.gatekeeper
+#on property:ro.crypto.state=unencrypted
+#    stop vendor.teei_daemon
+#    stop vendor.keymaster-4-1-beanpod
+#    stop vendor.gatekeeper
         
-on property:twrp.all.users.decrypted=true
-    stop vendor.teei_daemon
-    stop vendor.keymaster-4-1-beanpod
-    stop vendor.gatekeeper
+#on property:twrp.all.users.decrypted=true
+#    stop vendor.teei_daemon
+#    stop vendor.keymaster-4-1-beanpod
+#    stop vendor.gatekeeper
 
 on boot
     start boot-hal-1-2

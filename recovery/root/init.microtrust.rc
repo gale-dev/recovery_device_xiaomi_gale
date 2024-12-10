@@ -229,9 +229,9 @@ on fs
     chown system system /dev/emmcrpmb0
     chown system system /dev/utr_tui
     chmod 0660 /dev/utr_tui
-    write /proc/bootprof "start vendor.teei_daemon (on fs)"
-    start vendor.teei_daemon
-    write /proc/bootprof "start vendor.teei_daemon end (on fs)"
+    #write /proc/bootprof "start vendor.teei_daemon (on fs)"
+    #start vendor.teei_daemon
+    #write /proc/bootprof "start vendor.teei_daemon end (on fs)"
 
 on property:vendor.crypto.fake_encrypt=1 && property:vold.post_fs_data_done=1
     setprop vendor.soter.teei.crypto.state unencrypted
