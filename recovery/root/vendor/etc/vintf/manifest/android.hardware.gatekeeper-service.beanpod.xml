@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/mediatek/proprietary/trustzone/microtrust/source/common/gatekeeper_aidl/android.hardware.gatekeeper-service.beanpod.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.gatekeeper</name>
+        <fqname>IGatekeeper/default</fqname>
+    </hal>
+</manifest>
