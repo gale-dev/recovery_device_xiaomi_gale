@@ -155,6 +155,9 @@ TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 500
 
+# Torch
+PB_TORCH_PATH := "/sys/devices/platform/flashlights_ocp8132/torch_brightness"
+
 # StatusBar
 TW_STATUS_ICONS_ALIGN := center
 TW_CUSTOM_CPU_POS := "300"
@@ -172,6 +175,15 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 TW_PREPARE_DATA_MEDIA_EARLY := true
+
+# Treble
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+
+# DM Verity
+PB_DISABLE_DEFAULT_DM_VERITY := true
+
+# Maintainer Flags
+MAINTAINER := 'wulan17'
 
 # Security patch level
 TW_USE_FSCRYPT_POLICY := 2
@@ -218,5 +230,5 @@ TW_INCLUDE_FASTBOOTD := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
-# Maintainer
-TW_DEVICE_VERSION := wulan17
+# Disable AVB2.0
+PB_DISABLE_DEFAULT_PATCH_AVB2 := true
